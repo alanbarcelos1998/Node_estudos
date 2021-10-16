@@ -1,0 +1,10 @@
+<h3>Produtos expostos</h3>
+{{#each produtos}}
+<div>
+    <p>Produto: {{this.nome}}</p>
+    <p>valor de venda: {{this.valor}}</p>
+    <p>preço de custo: {{this.preco_custo}}</p>
+    <a href="/produto/{{this.id}}">Ver produto</a>
+    <hr>
+</div>
+{{/each}}
